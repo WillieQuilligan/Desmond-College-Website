@@ -1,0 +1,539 @@
+/* ============================================================
+   Desmond College - style.css
+   Colours: Blue #003399 | Yellow #ffcc00 | Red #cc0000
+   ============================================================ */
+
+/* --- RESET --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* --- BODY --- */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333333;
+    background-color: #ffffff;
+    line-height: 1.6;
+}
+
+/* --- HEADINGS --- */
+h1, h2, h3, h4 {
+    font-family: Georgia, serif;
+    color: #003399;
+    margin-bottom: 10px;
+}
+
+/* --- LINKS --- */
+a {
+    color: #003399;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* --- IMAGES --- */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- LISTS --- */
+ul {
+    list-style: none;
+}
+
+/* --- CLEAR --- */
+.clear {
+    clear: both;
+}
+
+/* ============================================================
+   NAVIGATION
+   ============================================================ */
+nav {
+    background-color: #003399;
+    padding: 15px 20px;
+}
+
+.nav-logo {
+    float: left;
+    color: #ffffff;
+    font-family: Georgia, serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.nav-logo span {
+    color: #ffcc00;
+}
+
+.nav-links {
+    float: right;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+.nav-links a {
+    color: #ffffff;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 2px;
+}
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.hero {
+    background-color: #003399;
+    color: #ffffff;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 2.3rem;
+}
+
+.hero h1 span {
+    color: #ffcc00;
+}
+
+.hero p {
+    color: #ccddff;
+    max-width: 650px;
+    margin: 0 auto 25px;
+}
+
+/* ============================================================
+   BUTTONS
+   ============================================================ */
+.btn,
+.btn-outline,
+.btn-blue {
+    display: inline-block;
+    padding: 12px 28px;
+    border-radius: 4px;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.btn {
+    background-color: #ffcc00;
+    color: #003399;
+}
+
+.btn:hover {
+    background-color: #e6b800;
+    text-decoration: none;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #ffffff;
+    border: 2px solid #ffffff;
+}
+
+.btn-outline:hover {
+    background-color: #ffffff;
+    color: #003399;
+    text-decoration: none;
+}
+
+.btn-blue {
+    background-color: #003399;
+    color: #ffffff;
+    border: 2px solid #003399;
+}
+
+.btn-blue:hover {
+    background-color: #ffffff;
+    color: #003399;
+    text-decoration: none;
+}
+
+/* ============================================================
+   LAYOUT
+   ============================================================ */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+.bg-grey {
+    background-color: #f4f4f4;
+}
+
+.bg-blue {
+    background-color: #003399;
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading p {
+    color: #666666;
+    max-width: 650px;
+    margin: 10px auto 0;
+}
+
+/* ============================================================
+   SIMPLE COLUMNS
+   ============================================================ */
+.two-col-left,
+.two-col-right,
+.about-left,
+.about-right,
+.admissions-main,
+.admissions-sidebar,
+.vm-left,
+.vm-right {
+    float: left;
+}
+
+.two-col-left,
+.two-col-right,
+.vm-left,
+.vm-right {
+    width: 48%;
+}
+
+.two-col-left,
+.vm-left {
+    margin-right: 4%;
+}
+
+.about-left,
+.admissions-main {
+    width: 65%;
+    margin-right: 4%;
+}
+
+.about-right,
+.admissions-sidebar {
+    width: 31%;
+}
+
+/* ============================================================
+   CONTENT BOXES
+   ============================================================ */
+.card,
+.vm-box,
+.objective,
+.facility,
+.sidebar,
+.form-box {
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 6px;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.card,
+.vm-box {
+    border-left: 5px solid #ffcc00;
+}
+
+.notice {
+    background-color: #fffbe6;
+    border-left: 5px solid #ffcc00;
+    padding: 15px 20px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+.year-box,
+.sidebar {
+    background-color: #003399;
+    color: #ffffff;
+}
+
+.year-box {
+    text-align: center;
+    padding: 25px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.year-box .year {
+    font-size: 3.5rem;
+    color: #ffcc00;
+    line-height: 1;
+}
+
+/* ============================================================
+   LISTS AND STEPS
+   ============================================================ */
+.milestones li,
+.eligibility-item,
+.doc-item {
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    background-color: #f4f4f4;
+    border-left: 4px solid #003399;
+    border-radius: 4px;
+}
+
+.milestones .m-year {
+    font-weight: bold;
+    color: #003399;
+    display: inline-block;
+    width: 55px;
+}
+
+.step {
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.step-number,
+.obj-number {
+    float: left;
+    margin-right: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.step-number {
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    background-color: #ffcc00;
+    color: #003399;
+}
+
+.obj-number {
+    font-size: 1.5rem;
+    color: #ffcc00;
+}
+
+.step-content,
+.obj-content {
+    overflow: hidden;
+}
+
+/* ============================================================
+   TABLE
+   ============================================================ */
+.deadlines-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.deadlines-table th {
+    background-color: #003399;
+    color: #ffffff;
+    padding: 12px;
+    text-align: left;
+}
+
+.deadlines-table td {
+    padding: 12px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.row-grey {
+    background-color: #f9f9f9;
+}
+
+.important-date {
+    color: #cc0000;
+    font-weight: bold;
+}
+
+/* ============================================================
+   FORMS
+   ============================================================ */
+.form-col {
+    float: left;
+    width: 48%;
+    margin-right: 4%;
+}
+
+.form-col.last {
+    margin-right: 0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+}
+
+.form-group textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.required {
+    color: #cc0000;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: #ffcc00;
+    color: #003399;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ============================================================
+   FOOTER
+   ============================================================ */
+footer {
+    background-color: #001a66;
+    color: #aabbdd;
+    padding: 50px 20px 0;
+}
+
+.footer-inner,
+.footer-bottom {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.footer-col-wide {
+    float: left;
+    width: 32%;
+    margin-right: 4%;
+}
+
+.footer-col {
+    float: left;
+    width: 17%;
+    margin-right: 4%;
+}
+
+.footer-col.last {
+    margin-right: 0;
+}
+
+.footer-col h4,
+.footer-col-wide h4 {
+    color: #ffffff;
+    border-bottom: 2px solid #ffcc00;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+
+.footer-col a {
+    display: block;
+    color: #aabbdd;
+    padding: 3px 0;
+}
+
+.footer-col a:hover {
+    color: #ffcc00;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #1144aa;
+    padding: 15px 0;
+    margin-top: 30px;
+}
+
+/* ============================================================
+   BREADCRUMB
+   ============================================================ */
+.breadcrumb {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    font-size: 0.85rem;
+}
+
+/* ============================================================
+   RESPONSIVE DESIGN
+   ============================================================ */
+@media (max-width: 992px) {
+    .nav-links {
+        display: none;
+    }
+
+    .two-col-left,
+    .two-col-right,
+    .about-left,
+    .about-right,
+    .admissions-main,
+    .admissions-sidebar,
+    .vm-left,
+    .vm-right,
+    .form-col,
+    .footer-col,
+    .footer-col-wide {
+        float: none;
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 1.8rem;
+    }
+
+    section {
+        padding: 40px 20px;
+    }
+
+    .btn,
+    .btn-outline,
+    .btn-blue {
+        display: block;
+        max-width: 220px;
+        margin: 10px auto;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.5rem;
+    }
+
+    .deadlines-table .hide-mobile {
+        display: none;
+    }
+}
